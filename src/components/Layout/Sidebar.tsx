@@ -53,15 +53,12 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, onTabChange, isCollapsed }
                     isActive
                       ? 'bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-lg'
                       : 'text-gray-300 hover:text-white hover:bg-gray-800'
-                  }`}
+                  } ${isCollapsed ? 'justify-center' : ''}`}
                 >
                   <Icon size={20} className="shrink-0" />
                   {!isCollapsed && (
                     <>
                       <span className="font-medium">{item.label}</span>
-                      {isActive && (
-                        <ChevronRight size={16} className="ml-auto opacity-70" />
-                      )}
                     </>
                   )}
                   
