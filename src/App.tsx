@@ -58,7 +58,7 @@ const DashboardContent: React.FC = () => {
           isRefreshing={isRefreshing}
         />
         
-        <main className="flex-1 p-6 overflow-auto">
+        <main className="flex-1 p-6 overflow-auto pt-6">
           <div className="max-w-7xl mx-auto">
             {isRefreshing ? (
               <div className="flex items-center justify-center py-12">
